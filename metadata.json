@@ -1,1 +1,13 @@
-{"description": "Hide minimized in overview", "uuid": "hide-minimized@danigm.net", "name": "Hide minimized", "shell-version": ["3.30", "3.32", "3.34", "3.36"]}
+{
+    "description": "Hide windows in overview",
+    "uuid": "hide-windows@azous.com.ar",
+    "name": "Hide windows",
+    "shell-version": [
+        "3.30",
+        "3.32",
+        "3.34",
+        "3.36"
+    ],
+    "version": 1,
+    "url": "https://github.com/ndazeo/hide-windows"
+}

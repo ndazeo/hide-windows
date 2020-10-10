@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extension-openweather">
+  <schema path="/ar/com/azous/extensions/hidewindows/" id="ar.com.azous.extensions.hidewindows">
+    <key type="as" name="titles">
+      <default>[]</default>
+      <summary>Titile count</summary>
+    </key>
+  </schema>
+</schemalist>

@@ -1,6 +1,6 @@
-# GNOME shell hide minimized in overview
+# GNOME shell hide windows in overview
 
-This is a gnome shell extension to hide minimized windows in overview
+This is a gnome shell extension to hide windows in overview based on the title.
 
 ## How to install:
 
