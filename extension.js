@@ -17,13 +17,14 @@ function match(win) {
 }
 
 function init() {
+}
+
+function enable() {
   titles = Settings.get_value("titles").deep_unpack();
   Settings.connect("changed", Lang.bind(this, function () {
     titles = Settings.get_value("titles").deep_unpack();
   }));
-}
 
-function enable() {
   imports.ui.workspace.Workspace.prototype._isOverviewWindow = (win) => {
     const show = isOverviewWindow(win);
     return show && match(win.get_meta_window());
@@ -41,4 +42,5 @@ function enable() {
 function disable() {
   imports.ui.workspace.Workspace.prototype._isOverviewWindow = isOverviewWindow;
   imports.ui.altTab.getWindows = getWindows;
+  Settings.run_dispose()
 }
