@@ -16,16 +16,15 @@ function match(win) {
 }
 
 function init() {
+}
+
+function enable() {
   const Settings = ExtensionUtils.getSettings(HIDEWINDOWS_SETTINGS_SCHEMA);
 
   titles = Settings.get_value("titles").deep_unpack();
   Settings.connect("changed", Lang.bind(this, function () {
     titles = Settings.get_value("titles").deep_unpack();
   }));
-}
-
-function enable() {
-  const Settings = ExtensionUtils.getSettings(HIDEWINDOWS_SETTINGS_SCHEMA);
 
   imports.ui.workspace.Workspace.prototype._isOverviewWindow = (win) => {
     const show = isOverviewWindow(win);
